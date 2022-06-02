@@ -16,10 +16,18 @@ image=Image.open("game.jpeg")
 st.image(image, caption=None, use_column_width=False,width=None)
 
 def amazing():
-        video_file=open('amazing.mp4','rb')
-        video_bytes=video_file.read()
-        st.video(video_bytes)
-        st.stop()
+    st.balloons()
+    video_file=open('amazing.mp4','rb')
+    video_bytes=video_file.read()
+    st.video(video_bytes)
+    st.stop()
+        
+def kris():
+    st.balloons()
+    video_file=open('kris.mp4','rb')
+    video_bytes=video_file.read()
+    st.video(video_bytes)
+    st.stop()
 
 def sort():
     st.session_state.result.sort(key=lambda x:x[18],reverse=True)
