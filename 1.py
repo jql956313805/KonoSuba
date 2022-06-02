@@ -21,7 +21,7 @@ def sort():
 def byname():
     list1=[]
     for row in st.session_state.result:
-        if st.session_state.name == row[1]:
+        if st.session_state.name in row[1]:
             list1.append(row)
     st.session_state.result=list1
 
