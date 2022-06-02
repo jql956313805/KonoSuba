@@ -35,6 +35,8 @@ def sort():
 def byname():
     if st.session_state.name=='dasima':
         amazing()
+    if st.session_state.name=='kris':
+        kris()
     list1=[]
     for row in st.session_state.result:
         if st.session_state.name in row[1]:
