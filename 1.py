@@ -15,10 +15,18 @@ st.title("Game Searching")
 image=Image.open("game.jpeg")
 st.image(image, caption=None, use_column_width=False,width=None)
 
+def amazing():
+        video_file=open('amazing.mp4','rb')
+        video_bytes=video_file.read()
+        st.video(video_bytes)
+        st.stop()
+
 def sort():
     st.session_state.result.sort(key=lambda x:x[18],reverse=True)
       
 def byname():
+    if st.session_state.name=='dasima':
+        amazing()
     list1=[]
     for row in st.session_state.result:
         if st.session_state.name in row[1]:
